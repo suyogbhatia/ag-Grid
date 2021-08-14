@@ -1,0 +1,15 @@
+  <mat-toolbar >
+    <span>AG Grid</span>
+  </mat-toolbar>
+  <h4 style="margin-left: 2rem;">This grid contains sample data</h4>
+<ag-grid-angular
+  #agGrid
+  style="height: 492px; width:1600px; margin-left: 30px;margin-top: 30px;"
+  class="ag-theme-balham"
+  [gridOptions]="gridOptions"
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+  (gridReady)='onGridReady($event)'
+  [defaultColDef]="defaultColDef"
+  >
+</ag-grid-angular>

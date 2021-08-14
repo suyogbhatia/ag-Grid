@@ -3,23 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SampleGridComponent } from './sample-grid/sample-grid.component';
+import { AgGridComponent } from './ag-grid/ag-grid.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SampleGridComponent
+    AgGridComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
