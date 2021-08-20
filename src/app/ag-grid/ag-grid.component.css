@@ -38,7 +38,7 @@ mat-toolbar {
 }
 .download-to-excel {
   color: #093c8a;
-  margin: 5px 0 0 2%;
+  margin: 5px 0 0 1%;
   font-size: 22px;
   cursor: pointer;
 }
@@ -47,4 +47,13 @@ mat-toolbar {
   margin: 4px 0 0 1%;
   font-size: 20px;
   cursor: pointer;
+}
+.edit-toggle {
+  color: #093c8a;
+  margin: 4px 0 0 2%;
+  font-size: 23px;
+  cursor: pointer;
+}
+.edit-on {
+  background-color: rgb(255, 250, 219);;
 }

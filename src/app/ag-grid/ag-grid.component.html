@@ -5,6 +5,7 @@
 <div class="action-bar">
   <input class="search-bar" (keyup.enter)="searchButton.click()" #searchInput>
   <button class="search-button" #searchButton (click)="searchGrid(searchInput.value)"><i class="fa fa-search"></i></button>
+  <div (click)="toggleEdit()" class="edit-toggle" title="Edit table" [ngClass]="{'edit-on': editMode}"><i class="fa fa-edit"></i></div>
   <div (click)="downloadToExcel()" class="download-to-excel" title="Download to Excel"><i class="fa fa-download" aria-hidden="true"></i></div>
   <div (click)="expandGrid('myGrid')" class="expand-grid" title="Expand Grid"><i class="fa fa-expand" ></i></div>
 </div>

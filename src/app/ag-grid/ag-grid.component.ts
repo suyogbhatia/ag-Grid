@@ -24,9 +24,11 @@ export class AgGridComponent implements OnInit {
   gridColumnApi;
   gridOptions;
   gridApi;
+  editMode = false;
   defaultColDef = {
     sortable: true,
-    filter: true
+    filter: true,
+    resizable: true,
   };
 
   constructor() { }
@@ -90,13 +92,9 @@ export class AgGridComponent implements OnInit {
 
   setUpGrid() {
     this.initialiseColDefs();
-    this.resetColDefs();
-    this.constructColDefs();
+    // this.resetColDefs();
     this.gridApi.setColumnDefs(this.columnDefs);
     this.loadData();
-  }
-
-  constructColDefs() {
   }
 
   initialiseColDefs() {
@@ -146,25 +144,24 @@ export class AgGridComponent implements OnInit {
         width: 575
       }
     ];
-
-    this.columnDefs.forEach(x=>{
-      x['resizable'] = true
-    })
   }
-
-  // setCellClass(params) {
-  //   if (params.value === 'Blue') {
-  //     return 'blue';
-  //   } else if (params.value === 'Green') {
-  //     return 'green';
-  //   }
-  // }
 
   resetColDefs() {
     this.gridApi.setColumnDefs([]);
   }
   searchGrid(keyword) {
     this.gridApi.setQuickFilter(keyword);
+  }
+
+  toggleEdit() {
+    this.editMode = !this.editMode;
+    const state = this.editMode? 'enabled': 'disabled'
+    alert(`Editing is ${state}`)
+    this.columnDefs.forEach(a=>{
+      a['editable'] = this.editMode
+    })
+    this.gridApi.setColumnDefs(this.columnDefs);
+    console.log(this.editMode);
   }
 
   onGridReady(params) {
