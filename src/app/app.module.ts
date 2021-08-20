@@ -23,7 +23,7 @@ import { MatToolbarModule } from '@angular/material';
     ReactiveFormsModule,
     AgGridModule.withComponents([]),
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

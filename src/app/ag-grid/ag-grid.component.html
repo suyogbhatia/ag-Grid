@@ -1,10 +1,17 @@
-  <mat-toolbar >
-    <span>AG Grid</span>
-  </mat-toolbar>
-  <h4 style="margin-left: 2rem;">This grid contains sample data</h4>
+<mat-toolbar>
+  <span>AG Grid</span>
+</mat-toolbar>
+<h4 style="margin-left: 2rem;">This grid contains sample data</h4>
+<div class="action-bar">
+  <input class="search-bar" (keyup.enter)="searchButton.click()" #searchInput>
+  <button class="search-button" #searchButton (click)="searchGrid(searchInput.value)"><i class="fa fa-search"></i></button>
+  <div (click)="downloadToExcel()" class="download-to-excel" title="Download to Excel"><i class="fa fa-download" aria-hidden="true"></i></div>
+  <div (click)="expandGrid('myGrid')" class="expand-grid" title="Expand Grid"><i class="fa fa-expand" ></i></div>
+</div>
 <ag-grid-angular
   #agGrid
-  style="height: 492px; width:1600px; margin-left: 30px;margin-top: 30px;"
+  id="myGrid"
+  style="height: 492px; width:1940px; margin-left: 30px;margin-top: 15px;"
   class="ag-theme-balham"
   [gridOptions]="gridOptions"
   [rowData]="rowData"

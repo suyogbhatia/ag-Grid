@@ -1,0 +1,50 @@
+mat-toolbar {
+ background: #093c8a;
+ color: white;
+}
+
+::ng-deep .ag-header {
+  background-color: #d5fced !important;
+}
+
+
+.action-bar{
+  margin-left: 2rem;
+  display: flex
+}
+
+.search-bar {
+  width: 170px;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search-button{
+  height: 31px;
+  width: 40px;
+  background: rgb(255, 250, 219);
+  border-radius: 0 3px 3px 0;
+  border: black 1px solid;
+  font-size: 15px;
+  border-left: none;
+  cursor: pointer;
+}
+.fa-search {
+  font-size: 17px;
+  color: #093c8a;
+}
+.search-button:hover {
+  background: rgb(250, 241, 197);
+}
+.download-to-excel {
+  color: #093c8a;
+  margin: 5px 0 0 2%;
+  font-size: 22px;
+  cursor: pointer;
+}
+.expand-grid {
+  color: #093c8a;
+  margin: 4px 0 0 1%;
+  font-size: 20px;
+  cursor: pointer;
+}

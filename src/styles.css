@@ -3,5 +3,29 @@
 @import "~ag-grid-community/dist/styles/ag-grid.css";
 @import "~ag-grid-community/dist/styles/ag-theme-balham.css";
 
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.blue {
+  color: black;
+  background-color: #00BFFF;
+}
+.green {
+  color: black;
+  background-color: #90EE90;
+}
+
+.ag-bl-normal-east,
+.ag-bl-normal,
+.ag-bl-normal-center,
+.ag-bl-normal-center-row,
+.ag-bl-full-height,
+.ag-bl-full-height-center,
+.ag-pinned-left-cols-viewport,
+.ag-pinned-right-cols-viewport,
+.ag-body-viewport-wrapper,
+.ag-body-viewport {
+    height: auto !important;
+}
