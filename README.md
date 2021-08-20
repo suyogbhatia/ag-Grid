@@ -6,22 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+To access and use the app you can run the above command in app's directory (provided Angular is installed).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Some features available in the app:
 
-## Build
+1. Grid search - User can search any text and the grid will show the row data having that text.
+2. Download - User can download the table in excel format by clicking on the download symbol in the UI.
+3. Fullscreen mode - User can view the table in full screen.
+4. Sorting - Columns can be sorted automatically by clicking on the corresponding grid column
+5. Filtering by column - Data can be further filtered out by filter option available for each column header (hover on the header and find out)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
