@@ -15,6 +15,7 @@ Some features available in the app:
 3. Fullscreen mode - User can view the table in full screen.
 4. Sorting - Columns can be sorted automatically by clicking on the corresponding grid column
 5. Filtering by column - Data can be further filtered out by filter option available for each column header (hover on the header and find out)
+6. Editing - User can edit the table, after toggling into the editing mode and back
 
 
 
